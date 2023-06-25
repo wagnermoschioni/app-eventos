@@ -1,0 +1,306 @@
+:root {
+    --primary: #e9650d;
+    --secondary: #95989A;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+}
+
+* {
+    font-family: "MOntserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-bottom: 80px;
+}
+
+/*Event form*/
+#event-description {
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.8));
+    background-position: center;
+    background-size: cover;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#event-detail {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--text-color);
+}
+
+#event-detail .btn-buy {
+    max-width: 20%;
+}
+
+#disclaimer h2 {
+    color: var(--primary);
+}
+
+#disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+#disclaimer .about-event {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+#disclaimer p {
+    font-size: 1em;
+    margin-bottom: 0.3em;
+}
+
+#subscription-form {
+    background-color: var(--secondary);
+    padding: 1.5em;
+    max-width: 22%;
+}
+
+#subscription-form p {
+    font-size: 1.2em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.form-group label {
+    color: var(--text-tertiary);
+    margin-bottom: .3em;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+.btn {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+
+}
+
+.btn-buy {
+    background-color: var(--primary);
+    color: var(--text-color);
+    text-transform: uppercase;
+    width: 40%;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    cursor: pointer;
+    justify-content: center;
+
+}
+
+.btn:hover {
+    opacity: .8;
+}
+
+/*Events section */
+
+#list-events h2 {
+    background-color: var(--text-secondary);
+    color: var(--primary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.events {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--text-color);
+
+}
+
+.event {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+    font-weight: bold;
+}
+
+.event .event-img img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+.event-detail-img {
+    width: 900px;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+
+
+#event-1 {
+    background-image: url("../img/sqr-1.jpg");
+}
+
+#event-2 {
+    background-image: url("../img/sqr-2.jpg");
+}
+
+#event-3 {
+    background-image: url("../img/sqr-3.jpg");
+}
+
+#event-4 {
+    background-image: url("../img/sqr-4.jpg");
+}
+
+
+
+/*Company location */
+#company {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url("../img/hrz-1.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--text-color);
+    margin-bottom: 3em;
+}
+
+
+#address, #about-address {
+    max-width: 30%;
+
+}
+
+#address {
+    display: flex;
+}
+
+#address i {
+    color: var(--primary);
+    font-size: 4em;
+    margin-right: .5em ;
+}
+
+#address-details {
+    text-align: center;
+    font-size: 1em;
+}
+
+#about-address h3 {
+    color: var(--primary);
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+#about-address p {
+    line-height: 1.5em;
+}
+
+
+
+/* Mobile */
+@media (max-width: 450px) {
+
+    /* Event form */
+    #event-description {
+        flex-direction: column;
+        height:  auto;
+    }
+
+    #disclaimer {
+        padding: 2em;
+    }
+
+    #disclaimer h2 {
+        margin-bottom: 0.5em;
+    }
+
+    #subscription-form {
+        max-width: 70%;
+        margin-bottom: 2em;
+
+    }
+
+    /*Events section*/
+    .events {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+
+    /*Event location */
+    #address {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+        padding: 2em 2;
+    }
+
+    #address {
+        order: 2;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    #address i {
+        margin: .3em 0;
+    }
+
+    #about-address {
+        order: 1;
+        max-width: 100%;
+    }
+
+
+
+}
+

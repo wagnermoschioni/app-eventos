@@ -1,0 +1,43 @@
+{
+    "eventos": [
+    {
+        "nome": "Guns N' Roses",
+        "data": "06/08/2023",
+        "horario": "20:00",
+        "palestrante": "Jeff Becker",
+        "preco": 250.0,
+        "local": "Estacionamento Shopping Ilha - São Luis- Maranhão",
+        "url" : "../img/sqr-1.jpg",
+        "chamada" : "/event-detail1.html"
+    },
+    {
+        "nome": "Jornada Dev Fullstack",
+        "data": "25/10/2023",
+        "horario": "16:30",
+        "palestrante": "Paulo Soares",
+        "preco": 550.0,
+        "local": "Estacionamento Shopping Ilha - São Luis- Maranhão",
+        "url" : "../img/sqr-2.jpg",
+        "chamada" : "/event-detail2.html" 
+    },
+    {
+        "nome": "Intensivão JavaScript",
+        "data": "16/11/2023",
+        "horario": "14:00",
+        "palestrante": "Brendan Eich",
+        "preco": 499.00,
+        "local": "Estacionamento Shopping Ilha - São Luis- Maranhão",
+        "url" : "../img/sqr-3.jpg",
+        "chamada" : "/event-detail3.html"
+    },
+    {
+        "nome": "ExaltaSamba",
+        "data": "13/09/2023",
+        "horario": "21:00",
+        "palestrante": "",
+        "preco": 399.00,
+        "local": "Estacionamento Shopping Ilha - São Luis- Maranhão",
+        "url" : "../img/sqr-4.jpg",
+        "chamada" : "/event-detail4.html"
+    }
+]}
